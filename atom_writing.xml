@@ -1,0 +1,9 @@
+---
+layout: atom
+---
+
+{% for post in site.posts limit:10 %}
+{% if post.categories contains 'writing'%}
+  {% include feed-detail.xml %}
+{% endif %}
+{% endfor %}
