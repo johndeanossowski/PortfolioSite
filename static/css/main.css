@@ -6,7 +6,7 @@ body {
   background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #526569;
+  border-top: 3px solid #356983;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -31,6 +31,8 @@ body {
 }
 .navbar-default .navbar-brand {
   color: #6b6b6b;
+  background: none;
+  border-bottom: none;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #ce6b29;
@@ -40,6 +42,8 @@ body {
 }
 .navbar-default .navbar-nav > li > a {
   color: #6b6b6b;
+  background: none;
+  border-bottom: none;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #ce6b29;
@@ -99,6 +103,11 @@ article{
   font-size: 1.3em;
 }
 
+article > a{
+  background: none !important;
+  border-bottom: none !important;
+}
+
 aside{
   position: relative;
   padding: 10px;
@@ -112,7 +121,9 @@ aside{
   margin: 20px 0;
 }
 .container a {
-  color: #526569;
+  color: #356983;
+  background: rgba(20,20,27,0.05);
+  border-bottom: 4px rgba(20,20,27,0.1) solid;
 }
 .container a:hover {
   color: #ce6b29;
@@ -139,7 +150,9 @@ aside{
   font-size: 15px;
 }
 .panel-default h4 a, h5 a {
-  color: #526569;
+  color: #356983;
+  background: rgba(20,20,27,0.05);
+  border-bottom: 4px rgba(20,20,27,0.1) solid;
 }
 .panel-default h4 a:hover, h5 a:hover {
   color: #ce6b29;
@@ -160,6 +173,8 @@ aside{
 }
 .social h4 > a {
   color: #000000;
+  background: none;
+  border-bottom: none;
 }
 .school{
   font-size: 1em;
@@ -172,6 +187,12 @@ aside{
 .blog-post{
   padding-top: 15px;
 }
+
+.blog-post a{
+  background: none;
+  border-bottom: none;
+}
+
 .blog-title{
   padding-top: 2px;
 }
@@ -208,11 +229,18 @@ aside{
 .footer {
   text-decoration: none !important;
 }
+
 .text-muted {
 	color: #6b6b6b;
 }
+
+.text-muted a{
+  background: none !important;
+  border-bottom: none !important;
+}
+
 div.footer{
-  border-bottom: 5px solid #526569;;
+  border-bottom: 5px solid #356983;
 }
 /* Set the fixed height of the footer here */
 /*.footer {
